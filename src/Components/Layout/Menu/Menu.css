@@ -1,0 +1,51 @@
+.Menu { 
+	display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 90%;
+    background-color: #000000;
+}
+.Menu-div { 
+	display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: #010101;
+    justify-content: center;
+}
+
+.Menu .active {
+    color: #000000; 
+    background-color: white;
+    border-radius: 3px;
+}
+
+
+.NavLink{
+    list-style: none;
+    position: relative;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: large;
+    justify-content: center;
+    text-decoration: none; 
+    margin-top: 20px; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.icons
+{
+    width: 15px;
+    height: 15px;
+}
+p{
+    padding-right: 3px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0;
+}

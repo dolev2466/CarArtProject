@@ -1,0 +1,101 @@
+.StatusTable {
+    display: flex;
+    flex-direction: column;
+	width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+.StatusTable table {
+    display: inline-table;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column ;        
+    width: 70%;
+    border-collapse: collapse;
+    overflow: auto;
+    max-height: 250px; /* Set maximum height */
+    overflow: auto; /* Enable scrolling */
+}
+
+.StatusTable th, .StatusTable td {
+    border: 1px solid #4c4a4a;
+    padding: 8px;
+    text-align: center;
+}
+
+.StatusTable th {
+    background-color: #9c1414;
+    color: #ffffff;
+}
+.StatusTable tbody tr {
+    background-color: #937575;
+}
+
+.StatusTable tbody tr:nth-child(even) {
+    background-color: #cbb6b6;
+}
+
+.StatusTable tbody tr:hover {
+    background-color: #ddd;
+}
+
+.Filter-div{
+    background-color: #0b0c37;
+    width: 90%;
+    height: 150px;
+    margin-bottom: 20px;
+}
+.Filter-div-headline 
+{
+    color: #9c1414;
+}
+.StatusFilterDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: black;
+}
+.StatusDatePicker {
+    height: 30px;
+    border-radius: 20px;
+    font-size: large;
+    text-align: center;
+    margin-left: 100px;
+}
+.StatusFilterDiv > label {
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 10px;
+    color: white;
+}
+
+.StatusFilterDiv> button{
+    width: 130px;
+    height: 35px;
+    background-color: rgb(66, 111, 201);
+    font-size: large;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+}
+.StatusTable >h1{
+    font-size: 50px;
+}
+.Warper{
+    display: flex;
+    align-items: center;
+    max-height: 500px; /* Set your desired maximum width */
+    overflow-x: auto; /* Enable horizontal scrolling if content overflows */
+    flex-direction: column;
+    justify-content: center;
+    background-color: #4c4a4a;
+    border-radius: 30px;
+    width: 90%;
+    height: 80%;
+}

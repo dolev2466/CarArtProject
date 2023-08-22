@@ -1,0 +1,151 @@
+.CreateInvitation {
+    display: flex;
+    flex-direction: row;
+	width: 100%;
+    height: 100%;
+}
+.RightDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+}
+.LeftDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:80%;
+    height: 100%;
+}
+.InfoDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 220px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+}
+.InvitationMenuWarpper{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.InvitationMenu{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    border-top-left-radius:10px;
+    border-bottom-left-radius: 10px;
+    background-color: white;
+    margin-top: 150px;
+}
+.InvitationMenu > button{
+    height: 50px;
+    background-color: white;
+    color: rgb(137, 13, 13);
+    font-size: large;
+    font-weight: bold;
+}
+.props{
+    margin-bottom: 20px;
+    font-size: large;
+    font-weight: bold;
+}
+.props > label {
+    margin-left: 10px;
+}
+.topButton{
+    border-top-left-radius: 10px;
+}
+.underButton
+{
+    border-bottom-left-radius: 10px;
+}
+.LeftDiv > h1, .LeftDiv > h2
+{
+    color:rgb(137, 13, 13) ;
+}
+.LeftDiv > h1{
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+.LeftDiv > h2{
+    font-size: 25px;
+}
+.AddJobDiv> input
+{
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.AddJobDiv > label {
+    font-size: 23px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+.AddJobDiv> button, .LeftDiv>button{
+    width: 170px;
+    height: 43px;
+    background-color: rgb(66, 111, 201);
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.AddJobDiv{
+    display: flex;
+    padding: 20px;
+    width: 1000px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.TableDiv{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start ;
+    width: 700px;
+    height: 270px;
+    background-color: rgb(68, 67, 66);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.work-li{   
+    display: flex;
+    height: 50px;
+    width: 650px;
+    font-size: 20px;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.work-ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.work-li > button
+{
+    border-radius: 100px ;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    color: white;
+}

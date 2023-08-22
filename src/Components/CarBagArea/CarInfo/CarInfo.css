@@ -1,0 +1,96 @@
+.CarInfo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start ;
+	width: 100%;
+    height: 100%;
+    color: rgb(152, 8, 8);
+}
+
+.main > h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.Right-side
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 100%;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.info-div-car-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 150px;
+    border-radius:30px;
+    background-color: rgb(85, 85, 85);
+    color: white;
+    font-size: larger;
+}
+.main > button{
+    border-radius: 30px;
+    width: 200px;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.main th, .main td {
+    border: 1px solid #4c4a4a;
+    padding: 8px;
+    text-align: center;
+}
+
+.main th {
+    background-color: #9c1414;
+    color: #ffffff;
+}
+.main tbody tr{
+    background-color: #937575;
+    color: black;
+}
+
+.main tbody tr:nth-child(even) {
+    background-color: #cbb6b6;
+    color: black;
+}
+
+.main tbody tr:hover {
+    background-color: #ddd;
+}
+
+.carinfo-infoNavLink{
+    list-style: none;
+    position: relative;
+    color: rgb(36, 36, 36);
+    width: 170px;
+    display: flex;
+    align-items: center;
+    font-size: large;
+    justify-content: center;
+    text-decoration: none; 
+    margin-top: 20px; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: azure ;
+    border-radius: 30px;    
+    border-width: 1px;
+    border-color: black ;
+    border-style: solid;
+}

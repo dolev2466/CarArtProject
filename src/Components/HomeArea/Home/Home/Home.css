@@ -1,0 +1,50 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.Home > img{
+    width: 90%;
+    height: 60%;
+}
+.headlines{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #850707;
+}
+.headlines >h1{
+    font-size: 70px;
+    margin-bottom: 5px;
+}
+.HomeInfoNavLink{
+    list-style: none;
+    position: relative;
+    color: rgb(131, 19, 19);
+    width: 170px;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    font-size: large;
+    justify-content: center;
+    text-decoration: none; 
+    margin-top: 20px; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: azure ;
+    border-radius: 30px;    
+    border-width: 1px;
+    border-color: #801616 ;
+    border-style: solid;
+    margin-left: 25px;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

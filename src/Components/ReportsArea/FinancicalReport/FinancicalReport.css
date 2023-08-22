@@ -1,0 +1,92 @@
+.FinancicalReport {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.FinancicalTable{
+    display: flex;
+    height: 350px;
+    width: 80%;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+}
+
+.FinancicalTable th, .FinancicalTable td {
+    width: 200px;
+    border: 1px solid #cc0808;
+    height: 30px;
+    padding: 8px;
+    text-align: center;
+}
+
+.FinancicalTable th {
+    background-color: #9c1414;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.FinancicalTable tbody tr{
+    height: 30px;
+}
+.FinancicalTable tbody tr {
+    background-color: #937575;
+}
+
+.FinancicalTable tbody tr:nth-child(even) {
+    background-color: #cbb6b6;
+}
+
+.FinancicalTable tbody tr:hover {
+    background-color: #ddd;
+}
+.FinancicalFilterDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.FinancicalDatePicker {
+    height: 30px;
+    border-radius: 20px;
+    font-size: large;
+    text-align: center;
+    margin-left: 100px;
+}
+.FinancicalFilterDiv > label {
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 10px;
+    color: white;
+}
+
+.FinancicalFilterDiv> button{
+    width: 130px;
+    height: 35px;
+    background-color: rgb(66, 111, 201);
+    font-size: large;
+    border-radius: 30px;
+    color: white;
+}
+.warper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    height: 80%;
+    background-color: #494343;
+    border-radius: 20px;
+}
+.FinancicalReport > h1{
+    color: #9c1414;
+    font-size: 50px;
+    font-weight: bold;
+}

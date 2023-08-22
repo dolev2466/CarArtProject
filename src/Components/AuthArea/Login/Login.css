@@ -1,0 +1,104 @@
+.Login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.LoginBox{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 80%;
+    background-image:  linear-gradient(90deg,#515152,#2a2a2b);
+    border-radius: 10px;
+
+}
+.Imag-div{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    background-image:  linear-gradient(90deg,#000000,#8e8d95);
+border-radius: 10px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.Imag-div > button{
+    border-radius: 30px;
+    width: 200px;
+    height: 50px;
+    color: black;
+    background-color: white;
+    font-size: large;
+    font-weight: bold;
+}
+.LoginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    height: 100%;
+    color: white;
+
+}
+
+.LoginForm input, .AddProduct button{
+    width: 200px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.LoginForm span{
+    color: red;
+    margin-right: 350px;
+    position: absolute;
+}
+.form-div
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bold;
+    width: 320px;
+    height: 266px;
+}
+.prop-div{
+    display: flex;  
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-div > button{
+    border-radius: 30px;
+    width: 150px;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.Imag-div-NavLink{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 40px;
+    list-style: none;
+    text-decoration: none; 
+    width: 200px;
+    height: 50px;
+}

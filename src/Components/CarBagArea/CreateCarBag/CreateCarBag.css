@@ -1,0 +1,88 @@
+.CreateCarBag {
+	display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.CreateCarBag >h1{
+    font-size: 50px;
+    color: rgb(126, 19, 19);
+}
+
+.CreateCarBagCard{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 600px;
+    color: white;
+    background-color: rgb(72, 72, 73);
+    align-items: center;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.signup-form-div
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bold;
+    width: 320px;
+    height: 400px;
+}
+
+
+.signup-form-div > button{
+    border-radius: 30px;
+    width: 200px;
+    height: 45px;
+    color: rgb(255, 255, 255);
+    background-color:  rgb(66, 111, 201);
+    font-size: large;
+    font-weight: bold;
+    margin-top: 20px;
+    
+}
+.car-prop-div{
+    display: flex;
+    flex-direction: row;  
+    width: 340px;
+    margin-bottom: 5px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.CreateCarBagCard input, .AddProduct button{
+    width: 200px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.CreateCarBagCard span{
+    color: red;
+    position: absolute;
+    margin-right: 350px;
+}
+.CreateCarBagCard-header
+{
+    margin-bottom: 80px;
+}
+.image-upload__preview
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 200px;
+    max-width: 300px;
+}
+.image-upload__preview > img
+{
+    max-height: 200px;
+    width: 300px;
+    object-fit: fill;
+}

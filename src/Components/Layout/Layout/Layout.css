@@ -1,0 +1,18 @@
+.Layout {
+	height: 100%;
+    display: grid;
+    grid-template-rows: 11% 89%;
+    grid-template-columns: repeat(12,1fr);
+    direction: rtl;
+}
+
+
+.Layout > header
+{
+    grid-column: span 12;
+}
+
+.Layout > main{
+    grid-column: span 11;
+    overflow: auto;
+}
