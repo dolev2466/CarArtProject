@@ -57,7 +57,7 @@
     justify-content: space-between;
 }
 
-.CreateCarBagCard input, .AddProduct button{
+.CreateCarBagCard input, .AddProduct button,.CreateCarBagCard select, .CreateCarBagCard option{
     width: 200px;
     height: 30px;
     border-radius: 30px;

@@ -10,7 +10,6 @@ class CarBagService{
         let cars= carsStore.getState().cars;   
             const response = await axios.get<CarModel[]>(appConfig.carsBagUrl);
             cars = response.data;
-            console.log(cars);
             carsStore.dispatch(fetchCars(cars));
         return cars;
     }
@@ -29,7 +28,6 @@ class CarBagService{
     public async addProduct(car:CarModel):Promise<void>
     {
       const headers={"Content-Type": "multipart/form-data"}
-      console.log(car);
       const formData=new FormData();
       formData.append("carnumber",car.carnumber.toString());
       formData.append("company",car.company);

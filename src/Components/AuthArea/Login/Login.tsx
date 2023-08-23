@@ -6,6 +6,9 @@ import { NavLink,useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import authService from "../../../Services/AuthService";
+import notifyService from "../../../Services/NotifyService";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; // Import the default CSS
 function Login(): JSX.Element {
     const {register,handleSubmit,formState} = useForm<CredentialsModel>();
     const navigate =useNavigate();
@@ -13,14 +16,23 @@ function Login(): JSX.Element {
     {
         try{
             await authService.login(credentials)
-            navigate("/home")
+            toast.success('ברוכים השבים', {
+                position: 'top-right',
+                autoClose: 3000, // Time in milliseconds
+              });
+              navigate("/home");
+              
         }catch(err:any){
-            console.log(err);
+            toast.error('שם משתמש או סיסמא לא נכונים', {
+                position: 'top-right',
+                autoClose: 3000, // Time in milliseconds
+              });
         }
     }
 
     return (
         <div className="Login">
+             <ToastContainer /> {/* Required for displaying notifications */}
                 <div className="LoginForm">
                     <h1>התחברות</h1>    
                     <form className="form-div" onSubmit={handleSubmit(send)}>

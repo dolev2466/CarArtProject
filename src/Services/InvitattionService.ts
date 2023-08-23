@@ -9,7 +9,6 @@ class InvitationService{
         let invitations = InvitationStore.getState().invitations.filter(inv=>inv.carNumber===carNumber);
             const response = await axios.get<Invitation[]>(appConfig.invitationCarUrl + carNumber);
             invitations = response.data;
-            console.log(invitations);
         return invitations;
     }
 
@@ -18,7 +17,6 @@ class InvitationService{
         let invitations = InvitationStore.getState().invitations;
             const response = await axios.get<Invitation[]>(appConfig.invitationUrl);
             invitations = response.data;
-            console.log(invitations);
         return invitations;
     }
 

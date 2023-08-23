@@ -1,9 +1,11 @@
 import "./Home.css";
 import homeImage from "../../../../Assets/Images/Home_LogoNoBackGround.png"
 import { NavLink } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 function Home(): JSX.Element {
     return (
         <div className="Home">
+            <ToastContainer /> {/* Required for displaying notifications */}
             <div className="headlines">
                 <h1>ברוכים הבאים לאוטוארט</h1>
                 <h3>בחר פעולה מתפריט הפעולות  </h3>

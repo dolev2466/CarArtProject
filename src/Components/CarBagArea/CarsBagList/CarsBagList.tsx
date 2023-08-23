@@ -12,7 +12,7 @@ function CarsBagList(): JSX.Element {
     const [cars,setCars] =useState<CarModel[]>([]);
 
         CarBagService.getAllCars()
-        .then( cars => {console.log(cars);setCars(cars);})
+        .then( cars => {setCars(cars);})
         .catch(err=>console.log(err));
 
     return (

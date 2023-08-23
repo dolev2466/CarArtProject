@@ -12,7 +12,7 @@ function FinancicalReport(): JSX.Element {
     const [invitations,setInvitation] =useState<Invitation[]|null>(null);
     
         invitationService.getAllInvitations()
-        .then( inv => {console.log(inv);setInvitation(inv);})
+        .then( inv => {setInvitation(inv);})
         .catch(err=>console.log(err));
 
 

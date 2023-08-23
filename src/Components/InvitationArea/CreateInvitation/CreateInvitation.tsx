@@ -25,6 +25,10 @@ function CreateInvitation(): JSX.Element {
 
     const params=useParams();
 
+    const jobs = ["השבחה (כללי)", "גלובלי", "מוקד תאונה", "שיפוץ מגן","שיפוץ 2 מגנים","שיפוץ מגן קדמי", "שיפוץ מגן אחורי", "ליטוש פנסים ראשיים","צביעת כיסוי מראה בודד","צביעת 2 כיסויי מראה"];
+    const workers= ["אמיר ","חוסיין","עבדאללה","איציק","משה","רחמים"];
+    const parts=["כנף ק.ימין","כנף א.ימין","דלת ק.ימין","דלת א.ימין","כנף ק.שמאל","כנף א.שמאל","דלת ק.שמאל","דלת א.שמאל","מכסה מנוע","מגן קדמי","מגן אחורי"];
+
     useEffect(()=>{
         if(params.cnum)
         {
@@ -91,24 +95,31 @@ function CreateInvitation(): JSX.Element {
                 <h2>{"מספר רכב:" + car?.carnumber}</h2>
                 <div className="AddJobDiv">
                     <label>עבודות:</label>
-                    <input
-                     type="text"
-                     value={inputValue}
-                     onChange={(e) => setInputValue(e.target.value)}
-                     ></input>
+                     <select id="jobs" onChange={(e)=>{setInputValue(e.target.value)}}>
+                            {jobs.map((job, index) => (
+                                <option key={index} value={job}>
+                                {job}
+                                </option>
+                            ))}
+                            </select>
                     <label>עובד:</label>
-                    <input type="text"
-                    value={tempValue}
-                    onChange={(e) => setTempValue(e.target.value)}
-                    ></input>
+                             <select id="workers" onChange={(e) => setTempValue(e.target.value)}>
+                            {workers.map((worker, index) => (
+                                <option key={index} value={worker}>
+                                {worker}
+                                </option>
+                            ))}
+                            </select>
             </div>
             <div className="AddJobDiv">
                     <label>חלקים:</label>
-                    <input
-                     id="parts"
-                     type="text"
-                     ref={inputRef}
-                     ></input>
+                    <select id="parts">
+                        {parts.map((part, index) => (
+                        <option key={index} value={part}>
+                        {part}
+                        </option>
+                    ))}
+                    </select>
                      <InvitaionImageUploader></InvitaionImageUploader>
             </div>
             <button onClick={handleAddItem}>הוספה</button>

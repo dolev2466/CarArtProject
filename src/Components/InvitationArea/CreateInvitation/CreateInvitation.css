@@ -149,3 +149,9 @@
     background-color: red;
     color: white;
 }
+.AddJobDiv > select, .AddJobDiv >option{
+    width: 200px;
+    height: 30px;
+    border-radius: 30px;
+    margin-left: 5px;
+}
